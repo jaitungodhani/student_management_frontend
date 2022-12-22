@@ -12,10 +12,10 @@ function App() {
       <ToastContainer />
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={
+        <Route path="/*" element={
             <div>Hello, Jaitun</div>
           } />
-          <Route path="/*" element={
+          <Route path="/" element={
             <Home />
           } />
         </Routes>

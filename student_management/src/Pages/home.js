@@ -1,9 +1,9 @@
-import { Button } from '@mui/material'
 import React from 'react'
+import PersistentDrawerLeft from '../Components/drawer'
 
 const Home = () => {
   return (
-    <Button variant='contained'>Hello</Button>
+    <PersistentDrawerLeft />
   )
 }
 
