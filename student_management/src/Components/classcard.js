@@ -7,30 +7,27 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import class_img from '../Assets/img/class_img.jpg';
 
-export default function ClassCard() {
-    const class_data = [{
-
-    }];
+export default function ClassCard({ classData }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} className="card">
       <CardMedia
         component="img"
         alt="green iguana"
         height="140"
-        image={class_img}
+        image={classData.image}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Class 1-A
+          {classData.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Room No :- 1 <br />
-          floor :- 1 <br />
-          class coordinator :- 
+          <b>Coordinator :-</b> {classData.faculty_name}<br />
+          <b>Room No :- </b> {classData.room_name}<br />
+          <b>Floor :- </b> {classData.floor}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button size="small" variant='contained' className='btn_action'>View More</Button>
       </CardActions>
     </Card>
   );

@@ -19,6 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import ClassCard from './classcard';
+import Class_collection from './class_collection';
 
 
 const drawerWidth = 240;
@@ -138,7 +139,7 @@ export default function PersistentDrawerLeft() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-          {value === 0 && <ClassCard />}
+          {value === 0 && <Class_collection />}
           {value === 1 && <div>Hello, Faculty</div>}
           {value === 2 && <div>Hello, Student</div>}
           {/* <ImgMediaCard /> */}
